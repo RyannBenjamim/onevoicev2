@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Voice - Configurações</title>
+    <link rel="stylesheet" href="../css/config.css">
+    <!-- Lib AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="center">
+            <nav>
+                <a href="../index.html">
+                    <div class="logo">
+                        <i class="fa-sharp fa-solid fa-o"></i>
+                        <p class="logoTitle">One Voice</p>
+                    </div>
+                </a>
+
+                <ul>
+                    <li><a href="sentimentos.html">Sentimentos</a></li>
+                    <li><a href="config.html">Configurações</a></li>
+                </ul>
+
+                <div class="menu-mobile">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="center">
+            <div class="containerConfig">
+                <div class="excluir" data-aos="fade-right" data-aos-duration="1250">
+                    <header class="headerExcluir">
+                        <p>Excluir</p>
+                    </header>
+
+                    <div class="mainExcluir">
+                        <label for="excText">Texto do card</label>
+                        <input type="text" class="excText" id="excText">
+                        <button class="btnExluir">Excluir</button>
+                    </div>
+                </div>
+
+                <div class="adicionar" data-aos="fade-right" data-aos-duration="1250">
+                    <header class="headerAd">
+                        <p>Adicionar</p>
+                    </header>
+
+                    <div class="mainAd">
+                        <label for="imagenUrl">Url da imagem</label>
+                        <input type="text" class="imagenUrl" id="imagenUrl">
+                        <label for="cardText">Texto do card</label>
+                        <input type="text" class="cardText" id="cardText">
+                        <button class="btnAdcionar">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/menumobile.js"></script>
+    <!-- Script do fontawesone -->
+    <script src="https://kit.fontawesome.com/45a1c2ef02.js" crossorigin="anonymous"></script>
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
